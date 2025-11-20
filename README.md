@@ -15,6 +15,7 @@ El proyecto consiste en crear un *shader* de libre disposición para aplicarlo s
 La idea de hacer un efecto de quemadura surgió mientras realizaba un trabajo de investigación para recolectar ideas, durante ese proceso acabé en un hilo de *Reddit* acerca de shaders hechos en **Unity** y entre ellos, encontré una animación corta de una textura de papel quemado hecho con la herramienta anteriormente mencionada.
 
 <h4 style="font-weight: bold">Video de inspiración sacado de reddit:</h4>
+
 [![Video_reddit](/Images_Readme/Reddit.png)](https://www.reddit.com/r/Unity3D/comments/13pmlam/60sec_shader_breakdown_how_to_make_realistic/?tl=es-419)
 
 
