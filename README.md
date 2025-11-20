@@ -28,7 +28,7 @@ A continuación se muestran unos ejemplos de los shaders con el efecto de quemad
 
 - Usando el [shader morado](/shaders/burn_effect1.frag) y la propia [imagen](/textures/unnamed.jpg) como ruido:
 
-![Morado_No_Ruido](Images_Readme/anim.gif)
+![Morado_No_Ruido](Images_Readme/Morado_Imagen.gif)
 
 
 ## FUENTES Y DOCUMENTACIÓN
