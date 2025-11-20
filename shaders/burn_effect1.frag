@@ -1,0 +1,1 @@
+precision mediump float;varying vec2 v_texCoord;uniform sampler2D u_texture,u_noiseTexture;uniform float u_burnThreshold;void main(){vec4 c=texture2D(u_texture,v_texCoord);float d=texture2D(u_noiseTexture,v_texCoord).r-u_burnThreshold;if(d<0.)discard;if(d<.02)c=vec4(.6,0,.6,1);else if(d<.07)c.rgb*=.1;gl_FragColor=c;}

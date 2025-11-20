@@ -1,0 +1,19 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+canvas {
+    display: block;
+    width: 80vw;
+    height: 80vh;
+    max-width: 800px;
+    max-height: 800px;
+    /* Opcional: Borde sutil para ver dónde termina el canvas */
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); 
+}
