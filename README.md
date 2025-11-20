@@ -5,7 +5,7 @@
 ## ÍNDICE
 
 - [Idea y motivación del shader](#preparativos-para-las-tareas)
-- [Proceso de búsqueda y documentación](#análisis-y-clasificación-de-monedas)
+- [Resultados](#análisis-y-clasificación-de-monedas)
 - [Fuentes y Documentación](#fuentes-y-documentación)
 
 El proyecto consiste en crear un *shader* de libre disposición para aplicarlo sobre algún objeto, en el caso del mismo, se ha decidido diseñar un efecto de quemadura a aplicar sobre distintos elementos.
@@ -17,6 +17,18 @@ La idea de hacer un efecto de quemadura surgió mientras realizaba un trabajo de
 <h4 style="font-weight: bold">Video de inspiración sacado de reddit:</h4>
 
 [![Video_reddit](/Images_Readme/Reddit.png)](https://www.reddit.com/r/Unity3D/comments/13pmlam/60sec_shader_breakdown_how_to_make_realistic/?tl=es-419)
+
+De dicho vídeo se obtuvo la idea de utilizar ruido (imagen a escala de grises que utilizar como plantilla) y una imagen cualquiera (una foto antigua para imitar el video) para crear un efecto de quemado de manera gradual dependiendo de la escala de grises del propio ruido.
+
+## RESULTADOS
+
+Para crear el efecto esperado, como se ha comentado anteriormente, se ha hecho uso de imágenes de ruido y mediante un graduado de tonalidades en escala de grises se aplica un efecto de quemado sobre otra imagen (imagen *"original"*), el [shader](/shaders/burn_effect1.frag) consiste en un panel de color simple y modificable, de hecho, el proyecto tiene 3 modificaciones del shader con diferentes colores que se pueden cargar dentro del [shacer.js](/shader.js) para visualizar los resultados, así como se puede modificar la imagen de ruido repitiendo la propia imagen original para generar otro efecto vistoso.
+
+A continuación se muestran unos ejemplos de los shaders con el efecto de quemado sobre la imagen original:
+
+- Usando el [shader morado](/shaders/burn_effect1.frag) y la propia [imagen](/textures/unnamed.jpg) como ruido:
+
+![Morado_No_Ruido](Images_Readme/anim.gif)
 
 
 ## FUENTES Y DOCUMENTACIÓN

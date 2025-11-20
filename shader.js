@@ -14,9 +14,9 @@ const BURN_SPEED = 0.0001;
         // 1. CARGA ASÍNCRONA DE SHADERS
         const [vsSource, fsSource] = await Promise.all([
             fetch('shaders/basic.vert').then(res => res.text()),
-            // fetch('shaders/burn_effect1.frag').then(res => res.text())
+            fetch('shaders/burn_effect1.frag').then(res => res.text())
             // fetch('shaders/burn_effect2.frag').then(res => res.text())
-            fetch('shaders/burn_effect3.frag').then(res => res.text())
+            // fetch('shaders/burn_effect3.frag').then(res => res.text())
         ]);
 
         // 2. Compilar programa
