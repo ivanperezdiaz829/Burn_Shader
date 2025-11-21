@@ -4,8 +4,8 @@
 
 ## ÍNDICE
 
-- [Idea y motivación del shader](#preparativos-para-las-tareas)
-- [Resultados](#análisis-y-clasificación-de-monedas)
+- [Idea y motivación del shader](#idea-y-motivación-del-shader)
+- [Resultados](#resultados)
 - [Fuentes y Documentación](#fuentes-y-documentación)
 
 El proyecto consiste en crear un *shader* de libre disposición para aplicarlo sobre algún objeto, en el caso del mismo, se ha decidido diseñar un efecto de quemadura a aplicar sobre distintos elementos.
@@ -22,7 +22,9 @@ De dicho vídeo se obtuvo la idea de utilizar ruido (imagen a escala de grises q
 
 ## RESULTADOS
 
-Para crear el efecto esperado, como se ha comentado anteriormente, se ha hecho uso de imágenes de ruido y mediante un graduado de tonalidades en escala de grises se aplica un efecto de quemado sobre otra imagen (imagen *"original"*), el [shader](/shaders/burn_effect1.frag) consiste en un panel de color simple y modificable, de hecho, el proyecto tiene 3 modificaciones del shader con diferentes colores que se pueden cargar dentro del [shacer.js](/shader.js) para visualizar los resultados, así como se puede modificar la imagen de ruido repitiendo la propia imagen original para generar otro efecto vistoso.
+Para crear el efecto esperado, como se ha comentado anteriormente, se ha hecho uso de imágenes de ruido y mediante un graduado de tonalidades en escala de grises se aplica un efecto de quemado sobre otra imagen (imagen *"original"*), el [shader](/shaders/burn_effect1.frag) consiste en un panel de color simple y modificable, de hecho, el proyecto tiene 3 modificaciones del shader con diferentes colores que se pueden cargar dentro del [shader.js](/shader.js) para visualizar los resultados, así como se puede modificar la imagen de ruido repitiendo la propia imagen original para generar otro efecto vistoso.
+
+El efecto de quemadura se consigue aplicando gradualmente el efecto de quemado (cambiar la zona quemada a gris oscuro y aplicar el shader en los bordes) sobre los tonos más oscuros de la imagen seleccionada como ruido, y mostrando el efecto sobre la imagen seleccionada para ser quemada, así, dependiendo del ruido seleccionado, se consiguen diferentes efectos de quemado.
 
 A continuación se muestran unos ejemplos de los shaders con el efecto de quemado con los diferentes colores del shader:
 
